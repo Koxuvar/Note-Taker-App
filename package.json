@@ -1,0 +1,23 @@
+{
+  "name": "note-taker-app",
+  "version": "1.0.0",
+  "description": "A web based note taking app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koxuvar/Note-Taker-App.git"
+  },
+  "author": "Connor Sullivan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Koxuvar/Note-Taker-App/issues"
+  },
+  "homepage": "https://github.com/Koxuvar/Note-Taker-App#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
