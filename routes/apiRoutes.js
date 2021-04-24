@@ -30,7 +30,13 @@ module.exports = (app) =>
     {
         const id = req.params.id;
         let arrofNotes = eval(fs.readFileSync(path.join(__dirname, '../db/db.json'), 'utf8'));
-        arrofNotes.splice(arrofNotes.indexOf(id), 1);
+        arrofNotes.forEach( e =>
+            {
+                if(e.id == id)
+                {
+                    arrofNotes.splice(arrofNotes.indexOf(e), 1);
+                }
+            });
         fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(arrofNotes), (err) =>
         {
             if(err) throw err;
